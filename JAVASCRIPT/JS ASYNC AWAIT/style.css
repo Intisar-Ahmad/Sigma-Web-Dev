@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(9, 10, 9);
+    color: rgb(9, 160, 9);
+    text-shadow: 2px 2px 2px ;
+}
+.text{
+    width: 98vw;
+    height: 94vh;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON SELECTORS</title>
+    <style>
+        /* .box:first-child{
+            background-color: black;
+            color: white;
+        }
+        .box::first-line{
+            color: yellow;
+        } */
+        
+          /* .boxes , [data-color="red"], .box , #red{
+            background-color: yellow;
+         } */
+        .boxes::before{
+            content: "BHINO";
+            background-color: black;
+            color:white;
+        }
+
+        ::selection{
+            background-color: blue;
+        }
+
+        input::placeholder{
+            color: aqua;
+            background-color: black;
+
+        }
+        input{
+            background-color: black;
+            border: 2px solid blue;
+            border-radius: 5px;
+            /* width: 50px; */
+            /* overflow: scroll; */
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="boxes" id="red">
+        <div class="box" data-color="red">I am a good box</div>
+        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, amet voluptatibus. Rerum laboriosam quaerat veritatis iusto nesciunt quae sed commodi odio expedita nemo.</div>
+        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, amet voluptatibus. Rerum laboriosam quaerat veritatis iusto nesciunt quae sed commodi odio expedita nemo.</div>
+        <input type="text" placeholder="Type your name here">
+      
+    </div>
+</body>
+</html>

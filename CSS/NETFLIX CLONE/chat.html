@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        .box1{
+            width: 95vw;
+            height: 20vh;
+            
+        }
+        .box{
+            height:100%;
+            position: absolute;
+            display: flex;
+            animation: scroll 3s linear infinite none running;
+        }
+        @keyframes scroll{
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><div class="box">
+        <img src="background image.jpg" alt="">
+        <img src="background image.jpg" alt="">
+      </div></div>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+**/node_modules/
+**/*.png
+**/*.jpeg
+**/*.jpg
+**/*.pdf
+**/*.mp4
+**/*.mkv
+**/*.mp3
+**/*.json

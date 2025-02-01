@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EVENTS</title>
+    <style>
+        :root{
+            --background: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: var(--background);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           height: 100px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+        .childcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 70%;
+            background-color: blue;
+            box-sizing: border-box;
+        }
+        .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-color: rgb(91, 131, 131);
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="childcontainer">
+        <div class="child">
+            This is a child
+        </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    <script>
+        let child  = document.querySelector(".child");
+        child.addEventListener("click",(e)=>{
+            e.stopPropagation();//this will prevent from event bubbling
+            alert("The child was touched!! You sick pervert!!")
+        })
+        let childcontainer  = document.querySelector(".childcontainer");
+        childcontainer.addEventListener("click",(e)=>{
+            e.stopPropagation();//same here
+            alert("The child container was touched!! You sick pervert!!")
+        })
+        let container  = document.querySelector(".container");
+        container.addEventListener("click",()=>{
+            alert("The container was touched!! You sick pervert!!")
+        })
+       
+       const getrandomcolor = ()=>{
+                let blue = Math.round(Math.random() * (255-0) + 0);
+                let red = Math.round(Math.random() * (255-0) + 0);
+                let green = Math.round(Math.random() * (255-0) + 0);
+                return `rgb(${red},${green},${blue})`;
+            }
+        let a = setInterval(()=>{
+            child.style.backgroundColor = getrandomcolor();
+        },200);
+        setTimeout(()=>{
+            childcontainer.style.backgroundColor = getrandomcolor();
+        },2000);
+
+        // let CSSvariable = document.documentElement;
+        // let background = getComputedStyle(CSSvariable).getPropertyValue('--background').trim();
+        // setInterval(()=>{
+
+        // CSSvariable.style.setProperty('--background',getrandomcolor());
+        // },5);
+        // console.log(CSSvariable);
+    </script>
+</body>
+</html>

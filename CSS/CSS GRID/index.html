@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            width: 80vw;
+            height: 60vh;
+            /* grid-template-columns:[pehla]100px [doosra]100px [teesra]100px [chota]100px [panchua]100px;
+            grid-template-rows: [first]100px [second]100px [third]100px ; */
+            grid-template-columns: repeat(4,40px);
+            grid-template-rows: repeat(2,40px);
+            gap: 32px;
+            /* align-content: center;
+            justify-content: center; */
+            justify-items: center;
+            align-items: center;
+            place-content: center;
+
+        }
+
+        .item {
+            border: 2px solid red;
+            width: 55px;
+            height: 55px;
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+  <style>
+
+    div{
+        /* Element Selector */
+        /* background-color: red; */
+        background-color: aliceblue;
+    }
+    .red{
+        /* class Selector */
+        background-color: red;
+    }
+    #ok{/* id selector*/
+        color: green;
+    }
+    div > p {/*child selector*/
+        color: blue;
+        background-color: rgb(248, 165, 165);
+    }
+    /* descendent selector */
+    div p{
+        color: blue;
+    }
+    /*universal selector*/
+
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+
+    /* pseudoselector */
+
+    a{
+        color: black;
+    }
+
+    a:visited{
+        color: red;
+    }
+    a:link{
+        color: green;
+    }
+    a:active{
+        background-color: red;
+    }
+
+    a:hover{
+        background-color: yellow;
+    }
+
+    /* child pseudo selector */
+
+    p:first-child{
+        background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+    <div class = "one">
+        <p>i am one</p>
+        <p>i am two</p>
+    </div>
+    <div id = "ok">
+        Hey, I am harry and today I am in CSS mood.
+    </div>
+    <div class = "red">
+        Hey, I am harry and today I am in CSS mood.
+    </div>
+    <div>
+        <p>
+            This is a paragragh inside a div
+        </p>
+    </div>
+  
+    <div>
+        <article>
+        <p>
+            This is a paragragh inside a div deep
+        </p>
+    </article>
+    </div>
+  <a href="https://www.google.com">Go to google</a>
+  <a href="https://www.codewithharry2.com">Go to harry</a>
+
+</body>
+</html>

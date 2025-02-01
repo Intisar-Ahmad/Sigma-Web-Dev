@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .yellow{
+            color:red !important;
+        }
+        h1.cred#ded{
+            color:aqua !important;
+        }
+        .cred{
+            color: blue !important;
+        }
+        .cpurple{
+            color:brown !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 : class=" yellow cred cpurple" id="ded">
+            Specificity
+        </h1>
+    </div>
+</body>
+</html>

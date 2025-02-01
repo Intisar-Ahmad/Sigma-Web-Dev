@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE 6</title>
+    <style>
+        body{
+            display: grid;
+            gap: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 60px 210px 80px;
+            justify-content: start;
+            align-items: center;
+            margin: auto;
+        }
+        .big{
+            font-size: x-large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .small{
+            
+            font-size: x-small;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .container img{
+            border-radius: 55px;
+        }
+        .main{
+            padding: 10px;
+            margin: auto;
+            display: grid;
+            height: 80vh;
+            width: 90vw;
+            grid-template-columns: repeat(3,1fr) ; 
+           grid-auto-rows: 150px;
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .box{
+            background-color: gainsboro;
+            display: grid;
+            height:100%;
+            width: 80%;
+            border-radius: 5px;
+            /* justify-content: center; */
+            justify-items: center;
+            align-items: center;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+        }
+        @media screen and (orientation: portrait) {
+            
+            .main{
+                padding: 10px;
+                display: grid;
+                height: 80vh;
+                width: 90vw;
+               grid-template-columns: repeat(1,1fr) ; 
+                grid-auto-rows: 150px;
+               justify-items: center;
+               align-items: center;
+                gap: 20px;
+                overflow-y: auto;
+            }
+            .box{
+                height:100%;
+                width: 80%;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+           font-size: large;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+        }
+       
+        .a{
+            width: 60%;
+            height: 60%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(56, 197, 56);
+            border-radius: 5px;
+            background-color: rgb(56, 197, 56);
+            padding: 3px;
+        }
+        .a:hover{
+            background-color: rgb(35, 171, 212);
+            border: 1px solid rgb(35, 171, 212) ;
+        }
+        .a:visited{
+            background-color: rgb(35, 171, 212);
+            border: 1px solid rgb(35, 171, 212);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="ue_logo.png" width="55px">
+        <span class="big">Download UltraEdit</span> <span class="small">vs587900980</span>
+    </div>
+    <main class="main">
+      <div class="box">ENGLISH <div class="a">
+        <a href="ue_english_64.exe"> Download English</a>
+      </div></div>
+      <div class="box">URDU <div class="a">
+        <a href="ue_english_64.exe"> Download Urdu</a>
+      </div></div>
+      <div class="box">PERSIAN <div class="a">
+        <a href="ue_english_64.exe"> Download Persian</a>
+      </div></div>
+      <div class="box">PUNJABI <div class="a">
+        <a href="ue_english_64.exe"> Download Pubjabi</a>
+      </div></div>
+      <div class="box">PUSHTO <div class="a"><a href="ue_english_64.exe"> Download Pushto</a></div></div>
+      <div class="box">FRENCH <div class="a"><a href="ue_english_64.exe"> Download French</a></div></div>
+      <div class="box">DEUTCH <div class="a"><a href="ue_english_64.exe"> Download Deutch</a></div></div>
+      <div class="box">RUSSIAN <div class="a"><a href="ue_english_64.exe"> Download Russian</a></div></div>
+    </main>
+</body>
+</html>

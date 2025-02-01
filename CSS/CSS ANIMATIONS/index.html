@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATIONS</title>
+    <style>
+        .container{
+            background-color: rgb(23, 90, 90);
+            width: 30vw;
+            height: 80vh;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+            /* animation-direction: alternate; */
+            /* animation-play-state: paused; */
+            animation: BHINO 3s linear  infinite 0s alternate;
+        }
+      
+        @keyframes BHINO{
+            0%{
+               
+            }
+            25%{
+                background-color: green;
+                transform: rotate(90deg) translate(200px);
+            }
+            50%{
+                background-color: yellow;
+                
+                transform: rotate(90deg) translate(400px);
+            }
+            75%{
+                background-color: purple;
+                
+                transform: rotate(90deg) translate(600px);
+            }
+            100%{
+                background-color: blue;
+                transform: rotate(90deg) translate(800px);
+           
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

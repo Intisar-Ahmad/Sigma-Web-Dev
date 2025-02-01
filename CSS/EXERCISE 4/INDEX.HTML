@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE 4</title>
+    <style>
+       
+        header{
+            border: 2px solid black;
+            background-color: pink;
+            height: 15vh;
+            max-height: 15vh;
+            box-sizing: border-box;
+            min-width: 90vw;
+            margin: auto;
+            position: sticky;
+            padding: 35px;
+            text-align: center;
+            top: 1px;
+        }
+        main{
+            border: 2px solid green;
+            /* height: 70vh; */
+            min-width: 90vw;
+            margin: 5px auto;
+            box-sizing: border-box;
+            padding: 55px;
+            padding-left: 180px;
+            /* padding-bottom: 50px; */
+            background-color: green;
+        }
+        main .box{
+            border: 2px solid black;
+            height: 350px;
+            width: 350px;
+            display:inline-block ;
+            /* margin: 70px; */
+            /* margin-bottom: 55px; */
+            /* margin: auto; */
+        }
+        @media screen and (orientation:potrait){
+            main .boxes{
+                display: flex;
+               flex-direction: column;
+
+            }
+            main{
+                min-height: 100vh;
+            }
+        }
+        .box1{
+            background-color: aqua;
+            margin-right: 30px;
+        }
+        .box2{
+            margin-left: 30px;
+            background-color: blueviolet;
+        }
+        .footer{
+            background-color: gray;
+            border: 2px solid gray;
+            border-radius: 10px;
+            max-width: 80vw;
+            width: 80vw;
+            height: 20vh;
+            margin: auto;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: x-large;
+            padding: 45px ;
+        }
+        .logo{
+            position: fixed;
+            border: 2px solid black;
+            background-color: orange;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            right: 2px;
+            bottom: 20px;
+            z-index: 2;
+            text-align: center;
+        }
+        footer{
+            border: 2px solid black;
+            height: 10vh;
+            min-width: 90vw;
+            background-color: cadetblue;
+            margin: auto;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        THIS IS THE NAV BAR
+    </header>
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </main>
+    <div class="footer">
+        This is BHINO
+    </div>
+    <div class="logo">
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

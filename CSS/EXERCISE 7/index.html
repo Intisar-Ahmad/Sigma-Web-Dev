@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            animation: animateX 10s linear 0s  infinite, animateY 500ms ease-out 0s alternate infinite;
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+            overflow-x: hidden;
+        }
+        @keyframes animateX {
+            from{
+               transform: translateX(-121px);
+            }
+            to{
+             transform: translateX(calc(80vw));
+            }
+        }
+        @keyframes animateY {
+            from{
+                
+            }
+            to{
+              bottom: calc(100% - 121px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+    
+</body>
+
+</html>
